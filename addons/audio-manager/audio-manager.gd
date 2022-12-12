@@ -29,7 +29,6 @@ func play(source, volume: float = 1.0) -> AudioStreamPlayer:
 	
 	# If the source is a string, create an AudioStream first
 	if typeof(source) == TYPE_STRING:
-		print("is string")
 		audio_stream = load(source)
 	else:
 		audio_stream = source
@@ -53,7 +52,6 @@ func play_loop(source, volume: float = 1.0) -> AudioStreamPlayer:
 	
 	# If the source is a string, create an AudioStream first
 	if typeof(source) == TYPE_STRING:
-		print("is string")
 		audio_stream = load(source)
 	else:
 		audio_stream = source
